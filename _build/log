@@ -1,0 +1,143 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /Users/superuser/Desktop/Projets/Tests
+# Auto-detected concurrency: 4
+$ /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -config > /var/folders/0j/kx1vp9893rn_18hck24t7gfh0000gp/T/dune_e51a9a_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; toplevel_path = Some External "/Users/superuser/.opam/4.14.0/lib/toplevel"
+#  ; ocaml_bin = External "/Users/superuser/.opam/4.14.0/bin"
+#  ; ocaml = Ok External "/Users/superuser/.opam/4.14.0/bin/ocaml"
+#  ; ocamlc = External "/Users/superuser/.opam/4.14.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/superuser/.opam/4.14.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/superuser/.opam/4.14.0/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok External "/Users/superuser/.opam/4.14.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/superuser/.opam/4.14.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/superuser/.opam/4.14.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/superuser/Desktop/Projets/Tests"
+#        ; "INSIDE_DUNE" :
+#            "/Users/superuser/Desktop/Projets/Tests/_build/default"
+#        ; "MANPATH" :
+#            "/Users/superuser/Desktop/Projets/Tests/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/superuser/Desktop/Projets/Tests/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/superuser/Desktop/Projets/Tests/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/superuser/Desktop/Projets/Tests/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/Users/superuser/.opam/4.14.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.0"
+#      ; standard_library_default = "/Users/superuser/.opam/4.14.0/lib/ocaml"
+#      ; standard_library = "/Users/superuser/.opam/4.14.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "cc"; "-c"; "-Wno-trigraphs" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin20.3.0"
+#      ; target = "x86_64-apple-darwin20.3.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.Tests.objs/byte -no-alias-deps -opaque -o lib/.Tests.objs/byte/tests.cmo -c -impl lib/tests.ml-gen)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamldep.opt -modules -impl lib/thds.ml) > _build/default/lib/.Tests.objs/tests__Thds.impl.d
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamldep.opt -modules -impl lib/fifo.ml) > _build/default/lib/.Tests.objs/tests__Fifo.impl.d
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamldep.opt -modules -impl lib/graph.ml) > _build/default/lib/.Tests.objs/tests__Graph.impl.d
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamldep.opt -modules -impl lib/flot.ml) > _build/default/lib/.Tests.objs/tests__Flot.impl.d
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamldep.opt -modules -impl lib/hash.ml) > _build/default/lib/.Tests.objs/tests__Hash.impl.d
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamldep.opt -modules -impl lib/lib.ml) > _build/default/lib/.Tests.objs/tests__Lib.impl.d
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamldep.opt -modules -impl lib/logique.ml) > _build/default/lib/.Tests.objs/tests__Logique.impl.d
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.Tests.objs/byte -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/byte/tests__Thds.cmo -c -impl lib/thds.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.Tests.objs/byte -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/byte/tests__Fifo.cmo -c -impl lib/fifo.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.Tests.objs/byte -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/byte/tests__Flot.cmo -c -impl lib/flot.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.Tests.objs/byte -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/byte/tests__Hash.cmo -c -impl lib/hash.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.Tests.objs/byte -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/byte/tests__Graph.cmo -c -impl lib/graph.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.Tests.objs/byte -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/byte/tests__Lib.cmo -c -impl lib/lib.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.Tests.objs/byte -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/byte/tests__Logique.cmo -c -impl lib/logique.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.Tests.objs/byte -I lib/.Tests.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.Tests.objs/native/tests.cmx -c -impl lib/tests.ml-gen)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.Tests.objs/byte -I lib/.Tests.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/native/tests__Thds.cmx -c -impl lib/thds.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.Tests.objs/byte -I lib/.Tests.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/native/tests__Fifo.cmx -c -impl lib/fifo.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.Tests.objs/byte -I lib/.Tests.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/native/tests__Flot.cmx -c -impl lib/flot.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.Tests.objs/byte -I lib/.Tests.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/native/tests__Lib.cmx -c -impl lib/lib.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.Tests.objs/byte -I lib/.Tests.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/native/tests__Logique.cmx -c -impl lib/logique.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.Tests.objs/byte -I lib/.Tests.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/native/tests__Graph.cmx -c -impl lib/graph.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I /Users/superuser/.opam/4.14.0/lib/ocaml/threads -I lib/.Tests.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/Tests.cma lib/.Tests.objs/byte/tests.cmo lib/.Tests.objs/byte/tests__Thds.cmo lib/.Tests.objs/byte/tests__Logique.cmo lib/.Tests.objs/byte/tests__Lib.cmo lib/.Tests.objs/byte/tests__Hash.cmo lib/.Tests.objs/byte/tests__Graph.cmo lib/.Tests.objs/byte/tests__Flot.cmo lib/.Tests.objs/byte/tests__Fifo.cmo)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.Tests.objs/byte -I lib/.Tests.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Tests -o lib/.Tests.objs/native/tests__Hash.cmx -c -impl lib/hash.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /Users/superuser/.opam/4.14.0/lib/ocaml/threads -I lib/.Tests.objs/byte -I lib/.Tests.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/Tests.cmxa lib/.Tests.objs/native/tests.cmx lib/.Tests.objs/native/tests__Thds.cmx lib/.Tests.objs/native/tests__Logique.cmx lib/.Tests.objs/native/tests__Lib.cmx lib/.Tests.objs/native/tests__Hash.cmx lib/.Tests.objs/native/tests__Graph.cmx lib/.Tests.objs/native/tests__Flot.cmx lib/.Tests.objs/native/tests__Fifo.cmx)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/Tests.cmxs lib/Tests.cmxa)
+$ (cd _build/default && /Users/superuser/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /Users/superuser/.opam/4.14.0/lib/ocaml/nums.cmxa -I /Users/superuser/.opam/4.14.0/lib/ocaml -I /Users/superuser/.opam/4.14.0/lib/ocaml lib/Tests.cmxa /Users/superuser/.opam/4.14.0/lib/ocaml/unix.cmxa -I /Users/superuser/.opam/4.14.0/lib/ocaml /Users/superuser/.opam/4.14.0/lib/ocaml/threads/threads.cmxa -I /Users/superuser/.opam/4.14.0/lib/ocaml bin/.main.eobjs/native/dune__exe__Main.cmx)

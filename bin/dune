@@ -1,0 +1,4 @@
+(executable
+ (public_name Tests)
+ (name main)
+ (libraries Tests Threads))
